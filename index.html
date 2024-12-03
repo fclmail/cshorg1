@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA$H COIN</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #002b00; /* Dark green */
+            color: #00ff00; /* Fluorescent green */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .top-right-gif {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 120px; /* Adjust GIF size */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 1000;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            margin-bottom: 20px;
+        }
+
+        .flashing-box {
+            position: relative;
+            width: 90%; /* Increased width */
+            max-width: 700px;
+            height: 180px; /* Height for visibility */
+            overflow: hidden;
+            border: 3px solid #00ff00;
+            background: rgba(0, 43, 0, 0.9);
+            box-shadow: 0 0 20px #00ff00;
+            margin-bottom: 30px;
+        }
+
+        .messages {
+            position: absolute;
+            width: 100%;
+            animation: scrollMessages 21s linear infinite;
+        }
+
+        .message {
+            width: 100%;
+            height: 180px; /* Matches the height of the box */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            font-size: 1.6rem; /* Increased font size for clarity */
+            text-align: center;
+        }
+
+        @keyframes scrollMessages {
+            0%, 14.28% {
+                transform: translateY(0);
+            }
+            14.29%, 28.57% {
+                transform: translateY(-180px);
+            }
+            28.58%, 42.86% {
+                transform: translateY(-360px);
+            }
+            42.87%, 57.14% {
+                transform: translateY(-540px);
+            }
+            57.15%, 71.43% {
+                transform: translateY(-720px);
+            }
+            71.44%, 85.71% {
+                transform: translateY(-900px);
+            }
+            85.72%, 100% {
+                transform: translateY(-1080px);
+            }
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row; /* Buttons are now arranged side by side */
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px; /* Adjusted button width */
+            height: 60px;
+            background-color: rgba(0, 43, 0, 0.9);
+            border: 3px solid #00ff00;
+            color: #00ff00;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            animation: glowSequence 4.8s infinite;
+        }
+
+        .button:nth-child(2) {
+            animation-delay: 1.6s;
+        }
+
+        .button:nth-child(3) {
+            animation-delay: 3.2s;
+        }
+
+        @keyframes glowSequence {
+            0%, 100% {
+                box-shadow: 0 0 8px #00ff00; /* Reduced glow intensity */
+                background-color: rgba(0, 43, 0, 0.9);
+                color: #00ff00;
+            }
+            50% {
+                box-shadow: 0 0 24px #00ff00; /* Reduced glow */
+                background-color: #00ff00;
+                color: #002b00;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- GIF in the top-right corner -->
+    <img src="pizzagif.gif" alt="Pizza GIF" class="top-right-gif">
+
+    <h1>CA$H COIN</h1>
+    <div class="flashing-box">
+        <div class="messages">
+            <div class="message">FREE $1,200,000 AIRDROP</div>
+            <div class="message">FREE PIZZA EVERY PURCHASE</div>
+            <div class="message">WIN FREE PIZZA FOR 1 YEAR</div>
+            <div class="message">300% PRICE INCREASE EXPECTED</div>
+            <div class="message">CA$H COIN - ALL THE BEST WALLETS HAVE SOME</div>
+            <div class="message">BUY WITH CRYPTO, VISA, MASTERCARD, OR PAYPAL</div>
+            <div class="message">BUY NOW BEFORE PRICE GOES UP</div>
+        </div>
+    </div>
+    <div class="button-container">
+        <a class="button" href="https://fclmail.github.io/CASHCOINSCROOL1">
+            CLICK HERE FOR 100% FREE AIR DROP
+        </a>
+        <a class="button" href="https://fclmail.github.io/CASHCOINSCROOL1">
+            CLICK HERE TO BUY WITH CRYPTO
+        </a>
+        <a class="button" href="https://fclmail.github.io/CASHCOINSCROOL1">
+            CLICK HERE TO BUY WITH PAYPAL
+        </a>
+    </div>
+</body>
+</html>
